@@ -26,6 +26,10 @@ export default function App() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
+  const params = new URLSearchParams(window.location.search);
+  const prefix = params.get('prefix');
+  const guestName = params.get('name');
+
   const { scrollYProgress } = useScroll();
   const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
 
@@ -189,7 +193,16 @@ export default function App() {
             transition={{ delay: 1.1 }}
             className="text-base sm:text-xl md:text-2xl text-gray-700 font-serif max-w-2xl mx-auto leading-relaxed px-2 mb-10"
           >
-            Invite you to join their wedding celebration on <br />
+            {guestName ? (
+              <>
+                We cordially invite <span className="font-bold">{prefix} {guestName}</span> <br />
+                to join our wedding celebration on <br />
+              </>
+            ) : (
+              <>
+                Invite you to join their wedding celebration on <br />
+              </>
+            )}
             <span className="text-[#8B3355] font-bold">Wednesday 30 December 2026 At 11 AM</span>
           </motion.p>
 

@@ -107,6 +107,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           background: #B96649;
           border-radius: 16px;
           overflow: hidden;
+          z-index: 0;
         }
 
         .envelope-back::after {
@@ -202,10 +203,10 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
         .flap-top {
           clip-path: polygon(0 0, 50% 52%, 100% 0);
           background: linear-gradient(to bottom, #D9896A, #CC7A5C);
-          z-index: 4;
+          z-index: ${opened ? 0 : 4};
           transform-origin: top;
           transform: rotateX(${opened ? '180deg' : '0deg'});
-          transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+          transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1), z-index 0s ${opened ? '0.3s' : '0s'};
           box-shadow: ${opened ? 'none' : '0 10px 20px rgba(0,0,0,0.08)'};
         }
 

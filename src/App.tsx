@@ -336,50 +336,8 @@ export default function App() {
         </div>
       </section>
 
-      {/* Countdown Section */}
-      <section className="py-24 px-4 relative">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-5xl font-serif text-[#8B3355] mb-4 uppercase tracking-widest">
-              Counting Down
-            </h2>
-            <p className="text-xl text-gray-600 font-serif">
-              Until the marriage of Achali & Manul
-            </p>
-          </motion.div>
-
-          <CountdownTimer />
-        </div>
-      </section>
-
-      {/* Event Timeline Section */}
-      <section id="timeline" className="py-24 px-4 relative">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-5xl font-serif text-[#8B3355] mb-4 uppercase tracking-widest">
-              Event Timeline
-            </h2>
-            <p className="text-xl text-gray-600 font-serif lowercase italic">
-              [PORUWA CEREMONY AT 11.15AM]
-            </p>
-          </motion.div>
-
-          <EventTimeline />
-        </div>
-      </section>
-
       {/* Location Section */}
-      <section className="py-24 px-4 bg-gradient-to-b from-transparent via-pink-50/50 to-transparent relative">
+      <section className="py-24 px-4 relative">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -454,8 +412,50 @@ export default function App() {
         </div>
       </section>
 
+      {/* Event Timeline Section */}
+      <section id="timeline" className="py-24 px-4 bg-gradient-to-b from-transparent via-pink-50/50 to-transparent relative">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-5xl font-serif text-[#8B3355] mb-4 uppercase tracking-widest">
+              Event Timeline
+            </h2>
+            <p className="text-xl text-gray-600 font-serif lowercase italic">
+              [PORUWA CEREMONY AT 11.15AM]
+            </p>
+          </motion.div>
+
+          <EventTimeline />
+        </div>
+      </section>
+
+      {/* Countdown Section */}
+      <section className="py-24 px-4 relative">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-5xl font-serif text-[#8B3355] mb-4 uppercase tracking-widest">
+              Counting Down
+            </h2>
+            <p className="text-xl text-gray-600 font-serif">
+              Until the marriage of Achali & Manul
+            </p>
+          </motion.div>
+
+          <CountdownTimer />
+        </div>
+      </section>
+
       {/* RSVP Section */}
-      <section id="rsvp" className="py-24 px-4 relative">
+      <section id="rsvp" className="py-24 px-4 bg-gradient-to-b from-transparent via-pink-50/50 to-transparent relative">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -467,7 +467,7 @@ export default function App() {
               RSVP
             </h2>
             <p className="text-xl text-gray-600 font-serif">
-              Kindly respond by 10 December 2026
+              Kindly mention before November 15
             </p>
           </motion.div>
 

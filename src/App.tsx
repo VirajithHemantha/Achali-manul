@@ -147,8 +147,8 @@ export default function App() {
             transition={{ delay: 0.8 }}
             className="text-xs sm:text-sm text-gray-500 font-serif mb-8 uppercase tracking-widest leading-relaxed"
           >
-            Loving Son of Mr. Saman udukubura & Mrs. anjana silva <br className="hidden sm:block" />
-            Together with Loving Daughter of Mr. Renold walter janz & Mrs. I G Manike
+            Loving Son of Mr. Saman udakumbura & Mrs. anjana silva <br className="hidden sm:block" />
+            Together with Loving Daughter of Mr. Renold walter janz & Mrs. Gayatri Manike
           </motion.div>
 
           {/* Names */}

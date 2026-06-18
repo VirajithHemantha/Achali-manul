@@ -35,7 +35,10 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           display: flex;
           align-items: center;
           justify-content: center;
-          background: linear-gradient(180deg, #EBE0D3 0%, #D8C6B6 100%);
+          background-image: url("/peony%20flowers.png");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
           font-family: "Cormorant Garamond", serif;
           overflow: hidden;
           position: relative;
@@ -54,7 +57,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
 
         .scene {
           position: relative;
-          z-index: 1;
+          z-index: 2;
           display: flex;
           flex-direction: column;
           align-items: center;

@@ -15,7 +15,7 @@ interface RSVPFormData {
 export function RSVPForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { register, handleSubmit, reset, formState: { errors } } = useForm<RSVPFormData>();
-  const scriptUrl = import.meta.env.VITE_GOOGLE_APPS_SCRIPT_URL as string | undefined;
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbyx38qzmg2qbURCTUbqSyrTQ-caQU9CusMnjoZirneEi7tbIrNRowyxHcfoq8AabhPm/exec";
 
   const onSubmit = async (data: RSVPFormData) => {
     setIsSubmitting(true);
